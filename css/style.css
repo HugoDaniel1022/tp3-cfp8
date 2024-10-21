@@ -2,16 +2,26 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-image: url('https://tn.com.ar/resizer/v2/imc-que-es-y-como-se-calcula-J3IAMNG53BER7DKZQHH2VM6C6U.jpg?auth=522885d8b5b684e31facb3a76c0d3598be76eea441f3192d8091742b86ef0b94&width=1440'); */
+}
+
+.Titulo {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    font-size: 35px;
+    padding: 50px;
 }
 
 form {
-    display: inline-block;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 label, input {
-    height: 30px;
-    display: block;
+    height: 50px;
     font-size: 15px;
     margin: 15px;
 }
@@ -21,17 +31,32 @@ button {
     margin: 10px;
 }
 
-section {
-    width: 100%;
-    text-align: center;
-}
 
-.Titulo {
-    height: 150px;
-    background-color: aquamarine;
-}
 
-h1 {
-    color: red;
-    font-size: 35px;
+@media screen and (max-width: 600px) {
+    form {
+        display: inline-block;
+        margin-top: 50px;
+    }
+    
+    label, input {
+        height: 30px;
+        display: block;
+        font-size: 15px;
+        margin: 15px;
+    }
+    
+    button {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    section {
+        width: 100%;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
 }
